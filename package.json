@@ -4,8 +4,33 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack-dev-server --hot"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "mahad Jr",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.11.4",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.11.1",
+    "chai": "^3.5.0",
+    "chai-jquery": "^2.0.0",
+    "jquery": "^3.1.0",
+    "jsdom": "^9.4.1",
+    "mocha": "^2.5.3",
+    "react-addons-test-utils": "^15.2.1",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "dependencies": {
+    "babel-preset-stage-1": "^6.5.0",
+    "bootstrap": "^3.3.7",
+    "lodash": "^4.14.0",
+    "react": "^15.2.1",
+    "react-dom": "^15.2.1",
+    "react-redux": "^4.4.5",
+    "react-router": "^2.6.0",
+    "redux": "^3.5.2",
+    "youtube-api-search": "0.0.5"
+  }
 }
