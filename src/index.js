@@ -1,13 +1,10 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import YTSearch from 'youtube-api-search';
 
-import SearchBar from './components/search_bar.jsx';
-
-const API_KEY = 'AIzaSyAZkqEAm1Gg5blDlrvUjbEBjdWyEtkE-i0';
+import App from './components/app';
 
 ReactDOM.render(
-    <div>
-        <SearchBar />
-    </div>,
+    <App />,
     document.querySelector('.container')
 );
