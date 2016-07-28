@@ -29,9 +29,9 @@ class App extends Component {
         });
     }
 
-    onSelectedVideo (selectedVideo) {
-        this.setState({selectedVideo});
-    }
+    // onSelectedVideo (selectedVideo) {
+    //     this.setState({selectedVideo});
+    // }
 
     render() {
         const videoSearch = _.debounce((term) => {this.videoSearch(term)}, 300);
@@ -39,11 +39,11 @@ class App extends Component {
         return (
             <div>
                 <SearchBar 
-                    onSearchNameChange={videoSearch)}
+                    onSearchNameChange={videoSearch}
                     />
                 <VideoDetail video={this.state.selectedVideo} />
                 <VideoList 
-                    onVideoSelect = {onSelectedVideo}
+                    onVideoSelect = {selectedVideo => this.setState({selectedVideo})}
                     videos={this.state.videos} />
             </div>
         );
